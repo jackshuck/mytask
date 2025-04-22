@@ -24,14 +24,14 @@
         <a href="#">Academics</a>
         <a href="#">Admissions</a>
         <a href="#">Todos</a>
-        <a class="btn-link" href="{{ route('teacher.loginstu')}}">Student</a>
+        <a class="btn-link" href="{{ route('student.register')}}">Student</a>
         <a class="btn-link" href="{{ route('teacher.login')}}">Teacher</a>
     </nav>
 </header>
 
 <div class="hero">
     <div class="hero-content">
-    <h1>Welcome to Greenfield School</h1>
+    <h1>Welcome to Scholaroid class manager</h1>
         <p>I've added a section to display an image. 
              You'll need to replace your-image.jpg with,
              alysis from the Middle East & worldwide,
@@ -42,7 +42,55 @@
     
     <img src="{{asset('images/home.png')}}">
 </div>
-
+<!-- this is center of the page  -->
+<div class="cards">
+         <h2 class="header">
+            meet services for scholarroid
+         </h2>
+         <div class="services">
+         <div class="content content-0">
+               <div ><img src="{{asset('images/first.png')}}"></div>
+               <h2>
+                  notes generator
+               </h2>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?
+               </p>
+               <a href="#">Read More</a>
+            </div>
+            <div class="content content-1">
+               <div ><img src="{{asset('images/home.png')}}"></div>
+               <h2>
+                  online assessment
+               </h2>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?
+               </p>
+               <a href="#">Read More</a>
+            </div>
+            <div class="content content-2">
+               <div><img src="{{asset('images/home.png')}}"></div>
+               <h2>
+                  online assignment
+               </h2>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?
+               </p>
+               <a href="#">Read More</a>
+            </div>
+            <div class="content content-3">
+               <div><img src="{{asset('images/home.png')}}"></div>
+               <h2>
+                online todoes
+               </h2>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?
+               </p>
+               <a href="#">Read More</a>
+            </div>
+         </div>
+      </div>
+<!-- the end-->
 <div class="container">
 
     <div class="section">

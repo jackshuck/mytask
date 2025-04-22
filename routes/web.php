@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\StudentAuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\teacherController;
 use App\Http\Controllers\teachersubController;
@@ -24,4 +24,13 @@ Route::get('/teacher/dashboard/addsubject',[teachersubController::class,'create'
 Route::post('/teacher/dashboard/store', [teachersubController::class, 'store'])->name('teacher.dashboard.subject.store');
 // Route::get('/teacher/dashboard', [teachersubController::class, 'dashboard'])->name('teacher.dashboard');
 
-Route::get('/teacher/loginasstudent', [teacherController::class, 'loginstu'])->name('teacher.loginstu');
+
+Route::get('/register', [StudentAuthController::class, 'showRegister'])->name('student.register');
+Route::post('/register', [StudentAuthController::class, 'register']);
+
+Route::get('/login', [StudentAuthController::class, 'showLogin'])->name('student.login');
+Route::post('/login', [StudentAuthController::class, 'login']);
+
+Route::get('/welcome', [StudentAuthController::class, 'dashboard'])->name('student.welcome');
+
+Route::post('/logout', [StudentAuthController::class, 'logout'])->name('student.logout');

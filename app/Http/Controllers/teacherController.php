@@ -51,11 +51,6 @@ class teacherController extends Controller
     }
     public function home()
     {
-        return view('teacher.home');
-    }
-
-    public function loginstu()
-    {
-        return view('teacher.loginstu');
+        return view('home');
     }
 }
