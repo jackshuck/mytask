@@ -3,151 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <title>Scholaroid | Welcome</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: #004aad;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            height: 50px;
-            margin-right: 10px;
-            border-radius:50%;
-        }
-        .logo span {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #ffd700;
-        }
-        .btn-link {
-            background: #ffd700;
-            color: #004aad;
-            border: none;
-            padding: 8px 16px;
-            margin-left: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s ease all;
-        }
-        .btn-link:hover {
-            background: #ffa500;
-            color: #fff;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1605751157630-d264a2c7f9f4') center/cover no-repeat;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap:60px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-            text-align: center;
-        }
-        .hero img{
-            width:400px;
-            margin-top:5%;
-        }
-        .hero h1 {
-            width:500px;
-            color:black;
-            font-size: 2rem;
-            margin-top:5%;
-            padding:2px;
-            border-radius: 10px;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            margin-bottom: 10px;
-            color: #004aad;
-        }
-        .footer {
-            background: #004aad;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
-        }
-        ul.plan-list {
-            list-style: none;
-            padding: 0;
-        }
-        ul.plan-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
 </head>
 <body>
 
 <header>
     <div class="logo">
-    <img src="{{asset('images/Teacher Guiding Student At Desk.png')}}">
-        <span>Greenfield School</span>
+    <img src="{{asset('images/logo.png')}}">
+        <span>Scholaroid</span>
     </div>
+
+    <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Type something...">
+    <button onclick="showOutput()">Search</button>
+</div>
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Academics</a>
         <a href="#">Admissions</a>
-        <a href="#">Contact</a>
+        <a href="#">Todos</a>
         <a class="btn-link" href="{{ route('teacher.loginstu')}}">Student</a>
         <a class="btn-link" href="{{ route('teacher.login')}}">Teacher</a>
     </nav>
 </header>
 
 <div class="hero">
-    <h1>Welcome to Greenfield School
+    <div class="hero-content">
+    <h1>Welcome to Greenfield School</h1>
         <p>I've added a section to display an image. 
-             You'll need to replace your-image.jpg with 
+             You'll need to replace your-image.jpg with,
+             alysis from the Middle East & worldwide,
+              multimedia & interactives, opinions, documentaries, 
+              podcasts, long reads and broadcast
              the actual URL or path to your image file.</p>
-    </h1>
+</div>
     
-    <img src="{{asset('images/Teacher Guiding Student At Desk.png')}}">
+    <img src="{{asset('images/home.png')}}">
 </div>
 
 <div class="container">
