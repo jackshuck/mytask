@@ -34,3 +34,6 @@ Route::post('/login', [StudentAuthController::class, 'login']);
 Route::get('/welcome', [StudentAuthController::class, 'dashboard'])->name('student.welcome');
 
 Route::post('/logout', [StudentAuthController::class, 'logout'])->name('student.logout');
+
+
+Route::get('/studentshow',[StudentAuthController::class,'showStudents'])->name('dashboard.stuindex');

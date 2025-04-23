@@ -13,25 +13,17 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <h3>Dashboard</h3>
+        <h3>Dhere it is students data</h3>
         <ul>
-        <li><a href="{{route('stuindex')}}">Students</a></li>
+            <li><a>Students</a></li>
             <li><a href="#" >Todo</a></li>
             <li><a href="#">Subjects</a></li>
             <li><a href="#">Updates</a></li>
-            <li>
-                <h4>{{ $teacher->email}}</h4>
-                <form method="POST" action="{{ route('teacher.logout') }}">
-                    @csrf
-                    <button type="submit" class="logout-btn">Logout</button>
-                </form>
-            </li>
         </ul>
     </div>
 
     <!-- Main content -->
     <div class="main-content">
-        <h2>Welcome, {{ $teacher->username}}</h2>
         <i class="fa-regular fa-brightness"></i>
         <!-- Stats -->
         <div class="stats">
@@ -66,9 +58,15 @@
                 </tr>
             </thead>
             <tbody>
-             <tr>
-
-             </tr>
+            @foreach ($students as $student)
+    <tr>
+        <td>{{ $student->id }}</td>
+        <td>{{ $student->name }}</td>
+        <td>{{ $student->trade }}</td>
+        <td>{{ $student->level }}</td>
+        <td>{{ $student->email }}</td>
+    </tr>
+@endforeach
             </tbody>
         </table>
 

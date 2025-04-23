@@ -63,8 +63,16 @@ class StudentAuthController extends Controller
         }
 
         $student = Student::find(session('student_id'));
-        return view('student.welcome', compact('student'));  // Corrected: should match your actual view file
+        return view('student.welcome', compact('student',));  // Corrected: should match your actual view file
     }
+
+    
+    public function showStudents()
+    {
+        $students = Student::all();
+        return view('teacher.dashboard.stuindex', compact('students'));
+    }
+
 
     public function logout()
     {
