@@ -206,3 +206,45 @@ h2 {
     background-color: #d5d5d8;
     color: #0f0f0f;
 }
+
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px ;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.03);
+}
+
+.update-btn:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+}
+
+.delete-btn {
+    background-color: #e02d2d;
+    color: white;
+    padding: 10px ;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #717175;
+    transform: scale(1.03);
+}
+
+.delete-btn:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+}

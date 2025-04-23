@@ -37,3 +37,11 @@ Route::post('/logout', [StudentAuthController::class, 'logout'])->name('student.
 
 
 Route::get('/studentshow',[StudentAuthController::class,'showStudents'])->name('dashboard.stuindex');
+
+
+//crudd operation
+
+// Student management routes
+Route::get('/student/{id}/edit', [StudentAuthController::class, 'edit'])->name('teacher.dashboard.studentedit');
+Route::put('/student/{id}', [StudentAuthController::class, 'update'])->name('student.update');
+Route::delete('/student/{id}', [StudentAuthController::class, 'destroy'])->name('student.destroy');

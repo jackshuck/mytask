@@ -79,4 +79,38 @@ class StudentAuthController extends Controller
         session()->forget('student_id');
         return redirect()->route('student.login');
     }
+
+
+
+//update student
+
+public function edit($id)
+{
+    $student = Student::findOrFail($id);
+    return view('teacher.dashboard.studentedit', compact('student'));
+}
+
+// Update student
+public function update(Request $request, $id)
+{
+    $student = Student::findOrFail($id);
+
+    $request->validate([
+        'name' => 'required',
+        'trade' => 'required',
+        'level' => 'required',
+        'email' => 'required|email',
+    ]);
+
+    $student->update($request->all());
+
+    return redirect()->route('dashboard.stuindex')->with('success', 'Student updated.');
+}
+
+// Delete student
+public function destroy($id)
+{
+    Student::findOrFail($id)->delete();
+    return redirect()->route('dashboard.stuindex')->with('success', 'Student deleted.');
+}
 }

@@ -15,7 +15,7 @@
     <div class="sidebar">
         <h3>Dashboard</h3>
         <ul>
-        <li><a href="{{route('stuindex')}}">Students</a></li>
+        <li><a href="{{route('dashboard.stuindex')}}">Students</a></li>
             <li><a href="#" >Todo</a></li>
             <li><a href="#">Subjects</a></li>
             <li><a href="#">Updates</a></li>
@@ -52,25 +52,6 @@
     </button>
            
         </div>
-
-        <!-- New Students Table -->
-        <h3>Newly Registered Students</h3>
-        <table class="students-table">
-            <thead>
-                <tr>
-                    <th>#stu-id</th>
-                    <th>stu-name</th>
-                    <th>Stu-trade</th>
-                    <th>Stu-level</th>
-                    <th>Stu-email</th>
-                </tr>
-            </thead>
-            <tbody>
-             <tr>
-
-             </tr>
-            </tbody>
-        </table>
 
     </div>
 

@@ -15,7 +15,7 @@
     <div class="sidebar">
         <h3>Dhere it is students data</h3>
         <ul>
-            <li><a>Students</a></li>
+            <li><a href="{{route('teacher.dashboard')}}">Dashboard</a></li>
             <li><a href="#" >Todo</a></li>
             <li><a href="#">Subjects</a></li>
             <li><a href="#">Updates</a></li>
@@ -55,6 +55,7 @@
                     <th>Stu-trade</th>
                     <th>Stu-level</th>
                     <th>Stu-email</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -65,6 +66,14 @@
         <td>{{ $student->trade }}</td>
         <td>{{ $student->level }}</td>
         <td>{{ $student->email }}</td>
+        <td>
+        <a href="{{ route('teacher.dashboard.studentedit', $student->id) }}" class="update-btn">Edit</a>
+        <form action="{{ route('student.destroy', $student->id) }}" method="POST" style="display:inline;">
+         @csrf
+        @method('DELETE')
+        <button type="submit" onclick="return confirm('U realy want to do it?')" class="delete-btn">Delete</button>
+        </form>
+        </td>
     </tr>
 @endforeach
             </tbody>
