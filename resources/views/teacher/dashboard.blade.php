@@ -54,7 +54,55 @@
         </div>
 
     </div>
+</div>
 
+<div class="newdash-card">
+    <div class="cards-container">
+        <div class="card-content">
+            <h1>total income</h1>
+            <p>$340k</p>
+            <span>per moth</span>
+            <img/>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card-content">
+            <h1>total student</h1>
+            <p>120k</p>
+            <span>per moth</span>
+            <img/>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card-content">
+            <h1>total subject</h1>
+            <p>120k</p>
+            <span>per moth</span>
+            <img/>
+        </div>
+    </div>
+</div>
+
+<div class="newdash-card2">
+    <div class="cards-container2">
+        <div class="card-content">
+            <h1>total assignment</h1>
+            <p>340</p>
+            <span>per day</span>
+            <img/>
+        </div>
+    </div>
+
+    <div class="cards-container2">
+        <div class="card-content">
+            <h1>total asessment</h1>
+            <p>120k</p>
+            <span>per day</span>
+            <img/>
+        </div>
+    </div>
 </div>
 <script>
         const themeSwitch = document.getElementById('themeSwitch');
