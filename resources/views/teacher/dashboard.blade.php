@@ -58,25 +58,23 @@
         <table class="students-table">
             <thead>
                 <tr>
-                    <th>#su-id</th>
-                    <th>Sub-name</th>
-                    <th>Sub-topic</th>
-                    <th>Sub-note</th>
-                    <th>Sub-desc</th>
-                    <th>Registered At</th>
+                    <th>#stu-id</th>
+                    <th>stu-name</th>
+                    <th>Stu-trade</th>
+                    <th>Stu-level</th>
+                    <th>Stu-email</th>
                 </tr>
             </thead>
             <tbody>
-             
+                  @foreach
                     <tr>
-                        <td>1</td>
-                        <td>python</td> 
-                        <td>l0d23</td>
-                        <td>fgfggfgf</td>
-                        <td>eheetd>
-                        <td>12/23</td>
+                        <td>{{student->id}}</td>
+                        <td>{{student->name}}</td>
+                        <td>{{student->trade}}</td> 
+                        <td>{{student->level}}</td>
+                        <td>{{student->email}}</td>
                     </tr>
-                 
+                 @endforeach
             </tbody>
         </table>
 
