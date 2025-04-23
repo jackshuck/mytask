@@ -20,9 +20,9 @@ Route::post('/teacher/logout', [teacherController::class, 'logout'])->name('teac
 Route::get('/teacher/dashboard/addsubject',[teacherController::class,'dashsub'])->name('teacher.dashboard.subject');
 
 
-Route::get('/teacher/dashboard/addsubject',[teachersubController::class,'create'])->name('teacher.dashboard.subject');
-Route::post('/teacher/dashboard/store', [teachersubController::class, 'store'])->name('teacher.dashboard.subject.store');
-// Route::get('/teacher/dashboard', [teachersubController::class, 'dashboard'])->name('teacher.dashboard');
+Route::get('/teacher/subject/create', [TeachersubController::class, 'create'])->name('teacher.dashboard.subject.create');
+Route::post('/teacher/subject/store', [TeachersubController::class, 'store'])->name('teacher.dashboard.subject.store');
+Route::get('/teacher/subject/index', [TeachersubController::class, 'dashboard'])->name('teacher.dashboard.subindex');
 
 
 Route::get('/register', [StudentAuthController::class, 'showRegister'])->name('student.register');

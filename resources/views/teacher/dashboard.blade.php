@@ -16,6 +16,8 @@
         <h3>Dashboard</h3>
         <ul>
         <li><a href="{{route('dashboard.stuindex')}}">Students</a></li>
+        <li><a href="{{ route('teacher.dashboard.subindex') }}">Subjects</a>
+        </li>
             <li><a href="#" >Todo</a></li>
             <li><a href="#">Subjects</a></li>
             <li><a href="#">Updates</a></li>

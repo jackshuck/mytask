@@ -15,7 +15,7 @@
     <div class="sidebar">
         <h3>Dhere it is students data</h3>
         <ul>
-            <li><a href="{{route('teacher.dashboard')}}">Dashboard</a></li>
+            <li><a href="{{route('teacher.dashboard')}}">Goto Dashboard</a></li>
             <li><a href="#" >Todo</a></li>
             <li><a href="#">Subjects</a></li>
             <li><a href="#">Updates</a></li>
