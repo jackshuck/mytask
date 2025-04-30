@@ -30,7 +30,7 @@ class StudentAuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),  // Secure password
         ]);
-
+        
         return redirect()->route('student.login')->with('success', 'Registration successful! Please login.');
     }
 

@@ -81,6 +81,28 @@
     @endif
 </div>
 
+<script>
+        const themeSwitch = document.getElementById('themeSwitch');
+        const body = document.body;
+        const themeIcon = document.getElementById('themeIcon');
+        let isDarkMode = true;
+
+        themeSwitch.addEventListener('click', () => {
+            if (isDarkMode) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                themeIcon.classList.remove('sun');
+                themeIcon.classList.add('moon');
+                isDarkMode = false;
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                themeIcon.classList.remove('moon');
+                themeIcon.classList.add('sun');
+                isDarkMode = true;
+            }
+        });
+    </script>
     <!-- Bootstrap 5 JS Bundle -->
 </body>
 </html>
